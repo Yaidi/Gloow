@@ -53,7 +53,6 @@ Maybe the idea that people can return items may seem crazy, but our business mod
 ![form](src/Assets/bussines-model/shopping-down.png) 3. What do we do with the returned items?
 These will be for sale at Gloow Bazar, where our customers will also be able to use their Gloow points and will be able to purchase quality products at a low price, but with the non-return policy.
 
-
 ![Line](src/Assets/line.png)
 
 ## Planing
@@ -68,27 +67,27 @@ These will be for sale at Gloow Bazar, where our customers will also be able to 
 
 ### ![form](src/Assets/form.png)Tecnologies
 
--  React 
--   Hooks
--   React-router-dom
--  Use Context
--   Fetch,
--  Bootstrap
--   Reactstrap
--   Jest
--   .editorconfig
--   ES6
--   Css
--  Git work flow
--  Github Projects
--  Canva
--  Git
--  Postman
--   Figma
--   Photoshop
--   Google Analytics
--   Facebook developers
--   Github
+- React
+- Hooks
+- React-router-dom
+- Use Context
+- Fetch,
+- Bootstrap
+- Reactstrap
+- Jest
+- .editorconfig
+- ES6
+- Css
+- Git work flow
+- Github Projects
+- Canva
+- Git
+- Postman
+- Figma
+- Photoshop
+- Google Analytics
+- Facebook developers
+- Github
 
 ![Line](src/Assets/line.png)
 
@@ -114,7 +113,8 @@ These will be for sale at Gloow Bazar, where our customers will also be able to 
 
 ### ![form](src/Assets/form.png) Functional Design Document
 
-![Functional Design Document](src\Assets\functional-design-document.PNG)
+![Functional Design Document](src/Assets/functional-designs/functional-design-document.PNG)
+![Functional Design Document](src/Assets/functional-designs/functional-promotions.PNG)
 
 ### ![form](src/Assets/form.png) Finished Product
 
@@ -123,16 +123,16 @@ These will be for sale at Gloow Bazar, where our customers will also be able to 
 ## Authors
 
 ![Ana](src/Assets/team-faces/ana.png)
-✒️ [@Ana Paula Oliva](https://github.com/anapaulaoliva 'Repository of Ana Pau Oliva') 
+✒️ [@Ana Paula Oliva](https://github.com/anapaulaoliva 'Repository of Ana Pau Oliva')
 
 ![Karen](src/Assets/team-faces/karen.png)
-✒️ [@Ana Karen Ramirez](https://github.com/KARENLABO 'Repository of Karen Ramirez') 
+✒️ [@Ana Karen Ramirez](https://github.com/KARENLABO 'Repository of Karen Ramirez')
 
 ![Bianca](src/Assets/team-faces/bianca.png)
-✒️ [@Bianca Cardona](https://github.com/Biancardona 'Repository of Bianca Cardona') 
+✒️ [@Bianca Cardona](https://github.com/Biancardona 'Repository of Bianca Cardona')
 
 ![Tere](src/Assets/team-faces/tere.png)
-✒️ [@Teresa Carbajal](https://github.com/TeresaC21 'Repository of Teresa Carbajal') 
+✒️ [@Teresa Carbajal](https://github.com/TeresaC21 'Repository of Teresa Carbajal')
 
 ![Yaidi](src/Assets/team-faces/yaidi.png)
-✒️ [@Yaidi Garcia](https://github.com/Yaidi 'Repository of Yaidi Garcia') 
+✒️ [@Yaidi Garcia](https://github.com/Yaidi 'Repository of Yaidi Garcia')
