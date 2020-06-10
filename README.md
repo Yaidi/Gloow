@@ -1,4 +1,4 @@
-## SQUAD 2 ROCKS
+## SQUAD 2 ROCKS HARD
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
