@@ -1,0 +1,20 @@
+.container{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.counter {
+    color:#D283A9;
+    box-shadow: #f93b75 20em;
+    position: absolute;
+    top: 6em;
+    left: 5em;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
