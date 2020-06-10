@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
+import SearchForm from "../Components/SearchButton/SearchButton";
 
 const Home = () => {
-    return ( 
-        <h1>Hello, I'm Home</h1>
-     );
-}
- 
+    return <SearchForm />;
+};
+
 export default Home;
