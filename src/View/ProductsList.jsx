@@ -1,7 +1,31 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { ProductsId } from "../Library/UseFetch";
 
-const ProductsList = () => {
-  return <h1>Hello, I'm ProductsList</h1>;
-};
-
-export default ProductsList;
+export default function ProductsList({ match }) {
+    console.log(match);
+    const data = ProductsId(match.params.id);
+    console.log(data);
+    if (data !== undefined) {
+        return (
+            <div>
+                <ul>
+                    <li>
+                        <Link
+                            key={data.productId}
+                            to={`/ProductsDetails/${data.productId}`}
+                        >
+                            <li>{data.description}</li>
+                            <li>{data.price}</li>
+                        </Link>
+                    </li>
+                </ul>
+            </div>
+        );
+    }
+    return (
+        <div>
+            <h1> Ups¡ We couldnt find any product that matches your search.</h1>
+        </div>
+    );
+}
