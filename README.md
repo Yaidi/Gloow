@@ -16,7 +16,7 @@
     - Functional Design Document
     - Finished Product
 + [Authors](#authors)
-+ [Aknowledgments](#aknowledgments) 
++ [Aknowledgments](#aknowledgments)
 
 ![Line](src/Assets/line.png)
 
