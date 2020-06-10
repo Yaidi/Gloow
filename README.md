@@ -1,70 +1,138 @@
-## SQUAD 2 ROCKS HARDS
+# ![Logo Gloow](./src/Assets/gloowLogo.jfif)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## HACKING CHALLENGE NAGARRO
 
-## Available Scripts
+##  ![form](src/Assets/form.png) Table of Content
 
-In the project directory, you can run:
++ [Brand](#brand)
+    - About Our Problematic
+    - Startup
++ [Planing](#planing)
+  - Flow Git Hub
+  - Tecnologies
++ [Desing](#desing)
+    - Prototype
+    - Proposal Design
+    - Functional Design Document
+    - Finished Product
++ [Authors](#authors)
++ [Aknowledgments](#aknowledgments) 
 
-### `npm start`
+![Line](src/Assets/line.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##  Brand
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### ![form](src/Assets/form.png) Problematic
 
-### `npm test`
+##### The principle of our company is to solve 2 problems
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ **1.** Why would users want to use a new clothing app if there are thousands on the market for highly established companies?
 
-### `npm run build`
+**2.** Why do we have to spend so much money on expensive dresses or suits, and wear them only once in a lifetime, And then leave them in our closets.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**3.** Or always use the same boring clothes  because we don't have much capital to buy new ones?
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Startup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### We created Gloow to solve these 2 problems
 
-### `npm run eject`
+![Girl with money](src/Assets/girl-fondo.png) **Gloow clothing store** allows you to buy   clothing stores and accesories, but also allows you to return used items that were purchased at Gloow and exchange them for Gloow coins.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+With Gloow coins our users will be able to buy new items, and they will always be able to buy new ones.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### ![form](src/Assets/form.png) Bussines Model
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Maybe the idea that people can return items may seem crazy, but our business model is as follows:
 
-## Learn More
+![form](src/Assets/bussines-model/shopping-cart.png) 1. Customers will only be able to return the items they are premium users and if the they bought at glow, which ensures a repurchase on our page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Only items that comply with the return policies can be exchanged for gloow points. ![form](src/Assets/bussines-model/money.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![form](src/Assets/bussines-model/shopping-down.png) 3. What do we do with the returned items?
+These will be for sale at Gloow Bazar, where our customers will also be able to use their Gloow points and will be able to purchase quality products at a low price, but with the non-return policy.
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+![Line](src/Assets/line.png)
 
-### Analyzing the Bundle Size
+## Planing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### ![form](src/Assets/form.png) Code Structure Diagram
 
-### Making a Progressive Web App
+![form](src/Assets/planing/diagram.jpeg)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### ![form](src/Assets/form.png)Flow Git Hub
 
-### Advanced Configuration
+ ![form](src/Assets/planing/flow-git.jfif)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### ![form](src/Assets/form.png)Tecnologies
 
-### Deployment
+-  React 
+-   Hooks
+-   React-router-dom
+-  Use Context
+-   Fetch,
+-  Bootstrap
+-   Reactstrap
+-   Jest
+-   .editorconfig
+-   ES6
+-   Css
+-  Git work flow
+-  Github Projects
+-  Canva
+-  Git
+-  Postman
+-   Figma
+-   Photoshop
+-   Google Analytics
+-   Facebook developers
+-   Github
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+![Line](src/Assets/line.png)
 
-### `npm run build` fails to minify
+## Design
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### ![form](src/Assets/form.png) Prototype
+
+![form](src/Assets/prototype/Home.PNG)
+![form](src/Assets/prototype/Login.PNG)
+![form](src/Assets/prototype/categories.PNG)
+![form](src/Assets/prototype/products.PNG)
+![form](src/Assets/prototype/products-admin.PNG)
+![form](src/Assets/prototype/products-details.PNG)
+![form](src/Assets/prototype/shopping-bag.PNG)
+
+### ![form](src/Assets/form.png) Proposal Design
+
+![Inspiration](src/Assets/proposal-design/inspirations.PNG)
+![Logo](src/Assets/proposal-design/logo.PNG)
+![Logo](src/Assets/proposal-design/moodboard.PNG)
+![Logo](src/Assets/proposal-design/typography.PNG)
+![Logo](src/Assets/proposal-design/icons.PNG)
+
+### ![form](src/Assets/form.png) Functional Design Document
+
+![Functional Design Document](src\Assets\functional-design-document.PNG)
+
+### ![form](src/Assets/form.png) Finished Product
+
+![Line](src/Assets/line.png)
+
+## Authors
+
+![Ana](src/Assets/team-faces/ana.png)
+✒️ [@Ana Paula Oliva](https://github.com/anapaulaoliva 'Repository of Ana Pau Oliva') 
+
+![Karen](src/Assets/team-faces/karen.png)
+✒️ [@Ana Karen Ramirez](https://github.com/KARENLABO 'Repository of Karen Ramirez') 
+
+![Bianca](src/Assets/team-faces/bianca.png)
+✒️ [@Bianca Cardona](https://github.com/Biancardona 'Repository of Bianca Cardona') 
+
+![Tere](src/Assets/team-faces/tere.png)
+✒️ [@Teresa Carbajal](https://github.com/TeresaC21 'Repository of Teresa Carbajal') 
+
+![Yaidi](src/Assets/team-faces/yaidi.png)
+✒️ [@Yaidi Garcia](https://github.com/Yaidi 'Repository of Yaidi Garcia') 
