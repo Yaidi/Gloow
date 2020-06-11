@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ProductsId } from "./Library/UseFetch";
+import { ProductsId } from "../Library/UseFetch";
 
 export default function ProductsList({ match }) {
     console.log(match);
