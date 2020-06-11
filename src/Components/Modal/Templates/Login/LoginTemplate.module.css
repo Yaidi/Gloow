@@ -52,6 +52,10 @@
     animation-fill-mode: forwards;
 }
 
+#backgrounOpacity{
+    background: rgba(230, 17, 17, 0.468) !important;
+  }
+
 .CrossIcon {
     font-size: 3vw;
     cursor: pointer;
