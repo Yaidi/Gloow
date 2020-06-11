@@ -27,3 +27,6 @@ input:active {
     background-color: transparent;
 
 }
+form {
+    margin-bottom: 2em;
+}

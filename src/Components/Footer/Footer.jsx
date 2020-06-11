@@ -1,9 +1,10 @@
 import React from 'react'
+import Style from "./Footer.module.css";
 
 const Footer = () => {
     return (
         <footer>
-            <div className="container">
+            <div className="container-fluid" id={Style.backcolor}>
                 <div className="row">
                     <div className="col-lg-12">
                         <ul class="nav d-flex justify-content-center">

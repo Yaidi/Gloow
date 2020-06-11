@@ -4,7 +4,7 @@ const ContainerCategories = () => {
     return (
         <>
             <div class="card-deck">
-                <div class="card">
+                <div class="card back white">
                     <img src="..." class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -12,7 +12,7 @@ const ContainerCategories = () => {
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card back white">
                     <img src="..." class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -20,7 +20,7 @@ const ContainerCategories = () => {
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card back white">
                     <img src="..." class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>

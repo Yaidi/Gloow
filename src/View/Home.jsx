@@ -3,8 +3,8 @@ import React from "react";
 import SearchForm from "../Components/SearchButton/SearchButton";
 import ContainerCategories from '../Components/ContainerCategories/ContainerCategories';
 import ContainerPromotion from '../Components/ContainerPromotion/ContainerPromotion';
-// Css
 import CategoriesDisplay from "../Components/CategoriesDisplay/CategoriesDisplay";
+// Css
 
 const Home = () => {
     return (

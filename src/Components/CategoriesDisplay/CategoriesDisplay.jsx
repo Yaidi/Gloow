@@ -29,7 +29,7 @@ export default function CategoriesDisplay() {
         <div>
             <div class="card-deck">
                 {randomCategories.map((el, index) => (
-                    <section class="card" key={index}>
+                    <section class="card back white" key={index}>
                         <img src="..." class="card-img-top" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>

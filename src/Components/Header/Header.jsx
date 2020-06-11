@@ -8,7 +8,7 @@ import ButtonShopping from "../CarshoppingButton/CarshoppingButton";
 const Header = () => {
     return (
         <header>
-            <nav className="navbar  navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar  navbar-expand-lg navbar-dark" id={HeaderStyle.backColor}>
                 <a className="navbar-brand" href="#">
                     <img
                         alt="Gloowheader"
@@ -44,7 +44,7 @@ const Header = () => {
                                     src={ShoppingIcon}
                                     className={HeaderStyle.Icons}
                                 />
-                                <ButtonShopping/>
+                                <ButtonShopping />
                             </a>
                         </li>
                     </ul>

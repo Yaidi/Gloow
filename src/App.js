@@ -7,19 +7,16 @@ import Footer from './Components/Footer/Footer';
 // Css
 import './App.css';
 
-
-
 function App() {
     return (
         <>
             <Header />
-            <div className="container-fluid bg-light py-5">
-                <div className="container">
+            <div className="container-fluid back py-5">
+                <div className="container back">
                     <Routes />
                 </div>
             </div>
             <Footer />
-
         </>
     );
 }
