@@ -1,7 +1,11 @@
 import React from "react";
+import {AllCategoriesDisplay} from "../Components/CategoriesDisplay/CategoriesDisplay";
 
 const ProductsbyCategory = () => {
-    return <h1>Hello, I'm Products by Category</h1>;
+  return (
+        <div>
+            <AllCategoriesDisplay />
+        </div>
+    );
 };
-
 export default ProductsbyCategory;

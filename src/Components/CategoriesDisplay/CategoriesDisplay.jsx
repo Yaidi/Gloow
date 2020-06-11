@@ -80,59 +80,20 @@ export function CategoriesDisplay() {
         </div>
     );
 }
-export function AllCategoriesList() {
+export function AllCategoriesDisplay() {
     const [data, setData] = useState([]);
-    console.log(data);
+    console.log("data: ",data);
     useEffect(() => {
         AllCategories().then((response) => setData(response));
     }, []);
 
-    // for (let i = 0; i < randomCategories.length; i++) {
-    //     switch (randomCategories[i].description) {
-    //         case "Woman":
-    //             randomCategories[i].picture = womanl;
-    //             break;
-    //         case "Handbags":
-    //             randomCategories[i].picture = handbags;
-    //             break;
-    //         case "Shoes":
-    //             randomCategories[i].picture = shoes;
-    //             break;
-    //         case "Jewerly & Accesories":
-    //             randomCategories[i].picture = jewerlyandaccesories;
-    //             break;
-    //         case "Kids":
-    //             randomCategories[i].picture = kids;
-    //             break;
-    //         case "Home":
-    //             randomCategories[i].picture = home;
-    //             break;
-    //         default:
-    //             break;
-    //     }
-    //     // }
-    // }
     return (
         <div>
-            <div className="card-deck">
                 {data.map((el, index) => (
-                    <section className="card back white" key={index}>
-                        <img src="..." className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <Link to={`/CategoriesList/${el.categoryId}`}>
-                                <img src={el.picture} alt="" />
-                                {el.description}
-                            </Link>
-                            <p className="card-text">
-                                <small className="text-muted">
-                                    Last updated 3 mins ago
-                                </small>
-                            </p>
-                        </div>
-                    </section>
-                ))}
-            </div>
+  <section key={index}>
+                    <div>{el.description}</div>
+                </section>
+            ))}
         </div>
     );
 }
