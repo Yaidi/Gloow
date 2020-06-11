@@ -21,6 +21,7 @@ const Header = () => {
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id={HeaderStyle.backColor}>
                 <a className="navbar-brand" href="#">
+
                     <img
                         alt="Gloowheader"
                         src={Gloowheader}
@@ -61,13 +62,8 @@ const Header = () => {
                             </div>
                         </li>
                     </ul>
-
-
                 </div>
             </nav>
-
-
-
         </header>
     );
 }

@@ -7,7 +7,7 @@
     background: rgba(155, 133, 133, 0.25);
 }
 
-.Dialog {
+.lgDialog {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     border-radius: 20px;
@@ -87,7 +87,73 @@ p {
     }
 }
 
+/* Shopping Template */ 
+.ModalBody {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+}
+
+.ProductCard {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    padding: 1.5em;
+    margin: .5em;
+}
+
+.PaymentMethod {
+    background-color: transparent;
+    border: none;
+    color: #c4c4c4;
+}
+
+.Total {
+    text-align: center;
+}
+
+.Order {
+    display: flex;
+    justify-content: center;
+}
+
+.OrderButton {
+    font-size: 1vw;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.OrderButton:hover {
+    animation-name: OrderButton;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.CrossIconS {
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.CrossIconS:hover {
+    animation-name: CrossIcon;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes OrderButton {
+    100% {
+        padding-left: 4em;
+        padding-right: 4em;
+        background-color: transparent;
+        color: rgb(216, 56, 216);
+    }
+}
+
 /*mobile media queries */
+
 @media (max-width: 460px) {
     .Dialog {
         top: 40%;
