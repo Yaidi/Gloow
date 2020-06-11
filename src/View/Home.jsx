@@ -1,7 +1,6 @@
 import React from "react";
 // Components
 import SearchForm from "../Components/SearchButton/SearchButton";
-import ContainerCategories from '../Components/ContainerCategories/ContainerCategories';
 import ContainerPromotion from '../Components/ContainerPromotion/ContainerPromotion';
 import CategoriesDisplay from "../Components/CategoriesDisplay/CategoriesDisplay";
 // Css
