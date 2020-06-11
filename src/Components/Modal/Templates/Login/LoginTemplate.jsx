@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import LoginStyle from './LoginTemplate.module.css';
+import { UserContext } from '../../../../Routes/UserContext'
 
 const AdminLoginTemplate = ({ closeModal }) => {
 
+
     // State from value email and password
-    const [user, setSaveUser] = useState({
-        email: "",
-        password: "",
-    });
+    const { user, setSaveUser } = useContext(UserContext);
+    console.log(user, setSaveUser)
 
     // State from not empty inputs
     const [error, setError] = useState({

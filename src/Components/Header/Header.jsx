@@ -40,7 +40,7 @@ const Header = () => {
                     <ul className="navbar-nav ml-auto">
                         <span className="navbar-text">
                             <p>
-                                Welcome {user}
+                                Welcome {user.name}
                             </p>
                         </span>
                         <li className="nav-item active">
