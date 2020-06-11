@@ -22,8 +22,8 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="navbar  navbar-expand-lg navbar-dark bg-dark">
-                <a className="navbar-brand" href="/">
+            <nav className="navbar  navbar-expand-lg navbar-dark" id={HeaderStyle.backColor}>
+                <a className="navbar-brand" href="#">
                     <img
                         alt="Gloowheader"
                         src={Gloowheader}
