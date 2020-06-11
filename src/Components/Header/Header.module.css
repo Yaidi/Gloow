@@ -5,6 +5,7 @@
 
 .Icons {
    max-width: 3vw;
+   cursor: pointer;
 }
 #backColor{
     background-color: black;

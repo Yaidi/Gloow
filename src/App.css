@@ -5,3 +5,7 @@
     border-color: white;
     color: white;
 }
+/* this modifies categories cards size */
+img {
+    max-width: 20vw;
+}
