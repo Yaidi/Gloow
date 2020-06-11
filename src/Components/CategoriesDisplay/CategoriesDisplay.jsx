@@ -9,7 +9,7 @@ import jewerlyandaccesories from "../../Assets/categoriesImages/jewerlyandacceso
 import kids from "../../Assets/categoriesImages/kids.jpg";
 import home from "../../Assets/categoriesImages/home.jpg";
 
-export default function CategoriesDisplay() {
+export function CategoriesDisplay() {
     const [data, setData] = useState([]);
     let randomCategories = [];
     console.log(data);
@@ -77,6 +77,23 @@ export default function CategoriesDisplay() {
                     </section>
                 ))}
             </div>
+        </div>
+    );
+}
+export function AllCategoriesDisplay() {
+    const [data, setData] = useState([]);
+    console.log("data: ",data);
+    useEffect(() => {
+        AllCategories().then((response) => setData(response));
+    }, []);
+
+    return (
+        <div>
+                {data.map((el, index) => (
+  <section key={index}>
+                    <div>{el.description}</div>
+                </section>
+            ))}
         </div>
     );
 }
