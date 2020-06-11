@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { AllPromotions } from "../../Library/UseFetch";
 import jeans from "../../Assets/promotionsImages/jeans.png";
-// import shoes from "../../Assets/promotionsImages/shoes.png";
-// import dresses from "../../Assets/promotionsImages/dresses.png";
-// import handbags from "../../Assets/promotionsImages/handbags.png";
-// import home from "../../Assets/promotionsImages/home.png";
+import shoes from "../../Assets/promotionsImages/shoes.png";
+import dresses from "../../Assets/promotionsImages/dresses.png";
+import handbags from "../../Assets/promotionsImages/handbags.png";
+import home from "../../Assets/promotionsImages/home.png";
 
 export default function PromotionsDisplay() {
     const [data, setData] = useState([]);
@@ -28,25 +28,25 @@ export default function PromotionsDisplay() {
             );
             //Splice reeturn an Array of elements, we only need the fisrt one
             promotionsBuffer.push(randomElementsArray[0]);
-        }
+        }:zap:
         randomPromotions = promotionsBuffer;
         for (let i = 0; i < randomPromotions.length; i++) {
             switch (randomPromotions[i].promotionID) {
                 case 1:
                     randomPromotions[i].picture = jeans;
                     break;
-                // case 2:
-                //     randomPromotions[i].picture = handbags;
-                //     break;
-                // case 3:
-                //     randomPromotions[i].picture = home;
-                //     break;
-                // case 4:
-                //     randomPromotions[i].picture = dresses;
-                //     break;
-                // case 5:
-                //     randomPromotions[i].picture = shoes;
-                //     break;
+                case 2:
+                    randomPromotions[i].picture = handbags;
+                    break;
+                case 3:
+                    randomPromotions[i].picture = home;
+                    break;
+                case 4:
+                    randomPromotions[i].picture = dresses;
+                    break;
+                case 5:
+                    randomPromotions[i].picture = shoes;
+                    break;
                 default:
                     break;
             }

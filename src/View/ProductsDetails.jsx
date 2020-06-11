@@ -1,7 +1,12 @@
 import React from "react";
+// import {ProductsDetails} from "../Components/ProductsDisplay/ProductsDisplay";
 
-const ProductsDetails = () => {
-    return <h1>Hello, I'm ProductsDetails</h1>;
-};
+// const ProductsLists = () => {
+//     return (
+//         <div>
+//             <ProductsDetails />
+//         </div>
+//     );
+// };
 
-export default ProductsDetails;
+// export default ProductsLists;
