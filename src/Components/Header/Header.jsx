@@ -3,6 +3,7 @@ import AdminIcon from '../../Assets/icons/admin-icon.png';
 import ShoppingIcon from '../../Assets/icons/shopping-icon.png';
 import Gloowheader from '../../Assets/icons/gloowheader.png';
 import HeaderStyle from './Header.module.css'
+import ButtonShopping from "../CarshoppingButton/CarshoppingButton";
 
 const Header = () => {
     return (
@@ -43,6 +44,7 @@ const Header = () => {
                                     src={ShoppingIcon}
                                     className={HeaderStyle.Icons}
                                 />
+                                <ButtonShopping/>
                             </a>
                         </li>
                     </ul>
