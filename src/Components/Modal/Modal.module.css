@@ -1,0 +1,75 @@
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.Dialog {
+    background: rgb(243, 215, 215);
+    color: rgb(59, 55, 55);
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.CrossIcon {
+    font-size: 3vw;
+}
+
+.CrossIcon:hover {
+    color: purple;
+}
+
+img {
+    width: 2vw;
+    height: 1.5vw;
+}
+
+.Link {
+    color: rgb(105, 59, 212);
+}
+
+p {
+    font-size: 1em;
+}
+
+/*mobile media queries */
+
+@media (max-width: 460px) {
+    .Dialog {
+        top: 40%;
+        left: 25%;
+        transform: translate(-20%, -40%);
+    }
+
+    .CrossIcon {
+        font-size: 10vw;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    img {
+        width: 5vw;
+        height: 3.5vw;
+    }
+
+    .InfoIcon {
+        font-size: 30px;
+    }
+}
