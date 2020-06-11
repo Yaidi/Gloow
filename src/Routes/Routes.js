@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PromotionsList from '../View/PromotionsList';
 import PromotionsAdmin from '../View/PromotionsAdmin';
-import CategoriesList from '../View/CategoriesList';
+import CategoriesList from '../View/ProductsbyCategory';
 import CategoriesAdmin from '../View/CategoriesAdmin';
 import ProductsList from '../View/ProductsList';
 import ProductsAdmin from '../View/ProductsAdmin';

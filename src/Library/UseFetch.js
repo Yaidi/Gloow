@@ -23,7 +23,6 @@ export function ProductsId(productId) {
     }, [productId]);
 
     return data;
-
 }
 export function ProductsSearchbyCategory(inputCategoryId) {
     const [data, setData] = useState([]);

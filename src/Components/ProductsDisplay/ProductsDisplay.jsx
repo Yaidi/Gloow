@@ -1,10 +1,10 @@
 import React from "react";
-import { ProductsSearchbyCategory } from "../Library/UseFetch";
 import { Link } from "react-router-dom";
+import { ProductsId } from "./Library/UseFetch";
 
-export default function CategoriesList({ match }) {
+export default function ProductsList({ match }) {
     console.log(match);
-    const data = ProductsSearchbyCategory(match.params.id);
+    const data = ProductsId(match.params.id);
     console.log(data);
     if (data !== undefined) {
         return (
