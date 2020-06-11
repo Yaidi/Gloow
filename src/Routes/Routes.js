@@ -10,9 +10,11 @@ import ProductsDetails from '../View/ProductsDetails';
 import Home from '../View/Home';
 import Analytics from '../View/Analytics';
 
+
 const Routes = () => {
     return (
         <Router>
+
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/PromotionsList' component={PromotionsList} />
@@ -23,9 +25,9 @@ const Routes = () => {
                 <Route exact path='/ProductsAdmin' component={ProductsAdmin} />
                 <Route exact path='/ProductsDetails' component={ProductsDetails} />
                 <Route exact path='/Analytics' component={Analytics} />
-                {/*  <Route render={() => <Notfound />} /> */}
             </Switch>
-        </Router>
+
+        </Router >
     );
 };
 

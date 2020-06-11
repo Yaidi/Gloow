@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useContext } from "react";
 import AdminIcon from '../../Assets/icons/admin-icon.png';
 import ShoppingIcon from '../../Assets/icons/shopping-icon.png';
 import Gloowheader from '../../Assets/icons/gloowheader.png';
 import HeaderStyle from './Header.module.css'
 import ButtonShopping from "../CarshoppingButton/CarshoppingButton";
+import { UserContext } from '../../Routes/UserContext'
 
 const Header = () => {
+
+    const { setIsModalOpen } = useContext(UserContext);
+
+
+    const openModalLogin = () => {
+        setIsModalOpen(true)
+    };
+    const openModalCart = () => {
+        setIsModalOpen(true)
+    };
+
+
+
     return (
         <header>
             <nav className="navbar  navbar-expand-lg navbar-dark bg-dark">
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="/">
                     <img
                         alt="Gloowheader"
                         src={Gloowheader}
@@ -28,24 +42,26 @@ const Header = () => {
                             Welcome Admin Shopper
                     </span>
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">
+                            <div className="nav-link">
                                 <img
                                     alt="AdminIcon"
+                                    onClick={openModalLogin}
                                     src={AdminIcon}
                                     className={HeaderStyle.Icons}
                                 />
                                 <span className="sr-only">(current)</span>
-                            </a>
+                            </div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <div className="nav-link">
                                 <img
                                     alt="ShoppingIcon"
+                                    onClick={openModalCart}
                                     src={ShoppingIcon}
                                     className={HeaderStyle.Icons}
                                 />
-                                <ButtonShopping/>
-                            </a>
+                                <ButtonShopping />
+                            </div>
                         </li>
                     </ul>
 
