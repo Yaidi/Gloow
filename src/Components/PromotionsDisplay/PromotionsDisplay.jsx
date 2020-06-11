@@ -28,7 +28,7 @@ export default function PromotionsDisplay() {
             );
             //Splice reeturn an Array of elements, we only need the fisrt one
             promotionsBuffer.push(randomElementsArray[0]);
-        }:zap:
+        }
         randomPromotions = promotionsBuffer;
         for (let i = 0; i < randomPromotions.length; i++) {
             switch (randomPromotions[i].promotionID) {
