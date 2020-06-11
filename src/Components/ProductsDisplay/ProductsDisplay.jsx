@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ProductsId } from "../Library/UseFetch";
+import { ProductsId } from "../../Library/UseFetch";
 
-export default function ProductsList({ match }) {
+export default function ProductsDetails({ match }) {
     console.log(match);
     const data = ProductsId(match.params.id);
     console.log(data);
@@ -13,7 +13,7 @@ export default function ProductsList({ match }) {
                     <li>
                         <Link
                             key={data.productId}
-                            to={`/ProductsDetails/${data.productId}`}
+                            to={`/ProductsList/${data.productId}`}
                         >
                             <li>{data.description}</li>
                             <li>{data.price}</li>

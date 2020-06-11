@@ -14,30 +14,54 @@
     box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
     padding: 20px;
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 90%;
-    transform: translate(-50%, -50%);
+    transform: translate(-45%, -55%);
     z-index: 1;
 }
 
-.Inputs {
+
+.CrossIconS {
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.CrossIconS:hover {
+    animation-name: CrossIcon;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.ModalBody {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+}
+
+.ProductCard {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    padding: 1.5em;
+    margin: .5em;
+}
+
+.PaymentMethod {
     background-color: transparent;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    margin-bottom: 1.5em;
+    border: none;
+    color: #c4c4c4;
 }
 
-.Inputs::placeholder {
-    color: #c7c5c5ad;
+.Total {
+    text-align: center;
 }
 
-.Login {
+.Order {
     display: flex;
     justify-content: center;
 }
 
-.LoginButton {
+.OrderButton {
+    font-size: 1vw;
     padding-left: 2em;
     padding-right: 2em;
     border-radius: 10px;
@@ -46,20 +70,9 @@
     cursor: pointer;
 }
 
-.LoginButton:hover {
-    animation-name: LoginButton;
+.OrderButton:hover {
+    animation-name: OrderButton;
     animation-duration: 500ms;
-    animation-fill-mode: forwards;
-}
-
-.CrossIcon {
-    font-size: 3vw;
-    cursor: pointer;
-}
-
-.CrossIcon:hover {
-    animation-name: CrossIcon;
-    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -78,7 +91,8 @@ p {
     }
 }
 
-@keyframes LoginButton {
+
+@keyframes OrderButton {
     100% {
         padding-left: 4em;
         padding-right: 4em;
