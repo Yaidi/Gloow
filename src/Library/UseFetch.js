@@ -18,4 +18,20 @@ export function ProductsId(productId) {
     }, [productId]);
 
     return data;
+
+}
+export function ProductsSearchbyCategory(inputCategoryId) {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        fetch(`${API}${productsEndPoint}`)
+            .then((response) => response.json())
+            .then((res) => setData(res));
+    }, [inputCategoryId]);
+    let searchResults = [];
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].categoryId === inputCategoryId) {
+            searchResults.push(data[i])
+        }
+    }
+    return searchResults;
 }
