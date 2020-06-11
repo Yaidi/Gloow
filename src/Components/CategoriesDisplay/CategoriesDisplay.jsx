@@ -8,6 +8,7 @@ import shoes from "../../Assets/categoriesImages/shoes.jpg";
 import jewerlyandaccesories from "../../Assets/categoriesImages/jewerlyandaccesories.jpg";
 import kids from "../../Assets/categoriesImages/kids.jpg";
 import home from "../../Assets/categoriesImages/home.jpg";
+import Style from "./CategoriesDisplay.module.css";
 
 export function CategoriesDisplay() {
     const [data, setData] = useState([]);
@@ -60,19 +61,16 @@ export function CategoriesDisplay() {
         <div>
             <div className="card-deck">
                 {randomCategories.map((el, index) => (
-                    <section className="card back white" key={index}>
-                        <img src="..." className="card-img-top" alt="..." />
+                    <section className="card back" key={index}>
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <Link to={`/CategoriesList/${el.categoryId}`}>
-                                <img src={el.picture} alt="" />
-                                {el.description}
-                            </Link>
-                            <p className="card-text">
-                                <small className="text-muted">
-                                    Last updated 3 mins ago
-                                </small>
-                            </p>
+                            <Link to={`/CategoriesList/${el.categoryId}`} className={Style.container}>
+                                <img src={el.picture}  className="card-img-top" alt= {el.description} />
+                                 <div className={Style.overlay}>
+                              <div className={Style.text}>{"Go to " + el.description + " and see the products" }
+                              </div>
+                              </div>
+                            </Link>  
+                           
                         </div>
                     </section>
                 ))}
