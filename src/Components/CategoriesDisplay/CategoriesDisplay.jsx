@@ -58,21 +58,24 @@ export default function CategoriesDisplay() {
     }
     return (
         <div>
-            <div class="card-deck">
+            <div className="card-deck">
                 {randomCategories.map((el, index) => (
-                    <section class="card back white" key={index}>
-                        <img src="..." class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                    <section className="card back white" key={index}>
+                        <img src="..." className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
                             <Link to={`/CategoriesList/${el.categoryId}`}>
                                 <img src={el.picture} alt="" />
                                 {el.description}
                             </Link>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <p className="card-text">
+                                <small className="text-muted">
+                                    Last updated 3 mins ago
+                                </small>
+                            </p>
                         </div>
                     </section>
                 ))}
-
             </div>
         </div>
     );

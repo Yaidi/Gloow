@@ -25,41 +25,12 @@ export default function PromotionsDisplay() {
             promotionsBuffer.push(randomElementsArray[0]);
         }
         randomPromotions = promotionsBuffer;
-        // for (let i = 0; i < randomCategories.length; i++) {
-        //     switch (randomCategories[i].description) {
-        //         case "Woman":
-        //             randomCategories[i].picture = womanl;
-        //             break;
-        //         case "Handbags":
-        //             randomCategories[i].picture = handbags;
-        //             break;
-        //         case "Shoes":
-        //             randomCategories[i].picture = shoes;
-        //             break;
-        //         case "Jewerly & Accesories":
-        //             randomCategories[i].picture = jewerlyandaccesories;
-        //             break;
-        //         case "Kids":
-        //             randomCategories[i].picture = kids;
-        //             break;
-        //         case "Home":
-        //             randomCategories[i].picture = home;
-        //             break;
-        //         default:
-        //             break;
-        //     }
-        // }
     }
     return (
         <div>
             {randomPromotions.map((el, index) => (
                 <section key={index}>
-                    <div>
-                        {/* <Link to={`/PromotionsList/${el.promotionID}`}>
-                            <img src={el.picture} alt="" />
-                            {el.description} */}
-                        {/* </Link> */}
-                    </div>
+                    <div>{el.description}</div>
                 </section>
             ))}
         </div>
