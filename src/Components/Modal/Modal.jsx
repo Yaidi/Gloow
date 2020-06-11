@@ -19,18 +19,22 @@ const Modal = () => {
 
                 <div className={ModalStyle.Overlay}>
                     <div className={ModalStyle.Dialog}>
-
-                        <h1>
-                            <span role="img" aria-label="tada">🎉</span>
-                                This is a modal!                            
-                            <span role="img" aria-label="tada">🎉</span>>
-                        </h1>
                         <button onClick={closeModal}>
-                            <span className={ModalStyle.CrossIcon}>
-                                &times;
+                            <span 
+                                className={ModalStyle.CrossIcon}>
+                                    &times;
                             </span>
                         </button>
-                        
+
+                        <input
+                            type="email"
+                        />
+                        <input
+                            type="password"
+                        />
+                        <button>
+                            LOGIN
+                        </button>
                     </div>
                 </div>
             )}
