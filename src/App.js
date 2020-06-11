@@ -9,9 +9,9 @@ function App() {
     return (
         <>
             <Header />
-            <div class="container bg-light mt-about py-5">
-                <div class="row">
-                    <div class="col-lg-6">
+            <div className="container bg-light mt-about py-5">
+                <div className="row">
+                    <div className="col-lg-6">
                         <Routes />
                     </div>
                 </div>

@@ -5,16 +5,8 @@ const categoriesEndPoint = '/v1/shop/categories';
 const productsEndPoint = '/v1/shop/products/';
 
 export function AllCategories() {
-    const [data, setData] = useState([]);
-    useEffect(() => {
-        fetch(`${API}${categoriesEndPoint}`)
-            .then((response) => response.json())
-            .then((res) => {
-                setData(res);
-                console.log(data);
-            });
-    }, [data]);
-    return data
+    return fetch(`${API}${categoriesEndPoint}`)
+        .then((response) => response.json())
 }
 
 export function ProductsId(productId) {
