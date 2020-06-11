@@ -7,9 +7,9 @@ const Footer = () => {
             <div className="container-fluid" id={Style.backcolor}>
                 <div className="row">
                     <div className="col-lg-12">
-                        <ul class="nav d-flex justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary mb-4" href="#">Copyright © 2020 Gloow. All Rights Reserved</a>
+                        <ul className="nav d-flex justify-content-center">
+                            <li className="nav-item">
+                                <a className="nav-link text-secondary mb-4" href="#">Copyright © 2020 Gloow. All Rights Reserved</a>
                             </li>
                         </ul>
                     </div>
