@@ -26,11 +26,24 @@
     border-left: transparent;
     border-right: transparent;
     margin-bottom: 1.5em;
+    color: hsla(0, 10%, 75%, 0.849);
 }
 
 .Inputs::placeholder {
-    color: #c7c5c5ad;
+    color: #a59696ad;
+    background-color: transparent;
 }
+
+.Inputs input :focus {
+    color: #ecdadaf8;
+    background-color: transparent;
+}
+
+.Inputs input :active {
+    color: #CF2488;
+    background-color: transparent;
+}
+
 
 .Login {
     display: flex;
@@ -51,6 +64,10 @@
     animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
+
+#backgrounOpacity{
+    background: rgba(230, 17, 17, 0.468) !important;
+  }
 
 .CrossIcon {
     font-size: 3vw;
