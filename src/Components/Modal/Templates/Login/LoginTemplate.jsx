@@ -1,47 +1,104 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LoginStyle from './LoginTemplate.module.css';
 
-const AdminLoginTemplate = ({closeModal}) => {
-        return(
-            <div className={LoginStyle.Overlay}>
+const AdminLoginTemplate = ({ closeModal }) => {
+
+    // State from value email and password
+    const [user, setSaveUser] = useState({
+        email: "",
+        password: "",
+    });
+
+    // State from not empty inputs
+    const [error, setError] = useState({
+        errorFields: false,
+        errorUs: false
+    });
+
+    // Take values email and password of input
+    const onChangeInput = (e) => {
+        setSaveUser({
+            ...user,
+            [e.target.name]: e.target.value,
+        });
+    };
+    const { email, password } = user;
+
+    // Click user
+    const onSubmit = (e) => {
+        e.preventDefault();
+
+        // Validate not empty inputs
+        if (email.trim() === "" || password.trim() === "") {
+            setError({
+                ...error,
+                errorFields: true
+            });
+            return;
+        }
+        // Delete mesage error
+        setError({
+            ...error,
+            errorFields: false
+        });
+    };
+    return (
+        <div className={LoginStyle.Overlay}>
             <div className={LoginStyle.lgDialog}>
                 <div className="modal-header">
                     <div className="title">
                         LOGIN INTO YOUR ACCOUNT.
                     </div>
                     <div className="close-button">
-                            <span
-                                className={LoginStyle.CrossIcon}
-                                onClick={closeModal}>
-                                    &times;
+                        <span
+                            className={LoginStyle.CrossIcon}
+                            onClick={closeModal}>
+                            &times;
                             </span>
                     </div>
                 </div>
-                <div className="modal-body" >
-                    <input
-                        type="email"
-                        className={LoginStyle.Inputs}
-                        placeholder="Email Adress:"
-                        required
-                    />
-                    <input
-                        type="password"
-                        className={LoginStyle.Inputs}
-                        placeholder="Password:"
-                        required
-                    />
-                    <div className={LoginStyle.Login}>
-                        <button
-                            type="submit"
-                            onClick={() => {console.log(alert(`admin must login.`))}}
-                            className={LoginStyle.LoginButton}>
-                            LOGIN
+
+                <form onSubmit={onSubmit}>
+                    <div className="modal-body" >
+                        <input
+                            name="email"
+                            type="email"
+                            id="email"
+                            value={email}
+                            className={LoginStyle.Inputs}
+                            placeholder="Email Adress:"
+                            onChange={onChangeInput}
+                        />
+                        <input
+                            name="password"
+                            type="password"
+                            id="password"
+                            value={password}
+                            className={LoginStyle.Inputs}
+                            placeholder="Password:"
+                            onChange={onChangeInput}
+                        />
+                        <div className={LoginStyle.Login}>
+                            <button
+                                type="submit"
+                                name="action"
+                                /*  onClick={() => { console.log(alert(`admin must login.`)) }} */
+                                className={LoginStyle.LoginButton}>
+                                LOGIN
                         </button>
+
+                        </div>
+                        {error.errorFields ? (
+                            <p className="card-panel lighten-5 z-depth-1 text-danger pt-4">
+                                ALL FIELDS ARE REQUIRED
+                            </p>
+                        ) : null}
                     </div>
-                </div>
+                </form>
             </div>
-            </div>
-        );
+        </div>
+
+    );
 }
 
 export default AdminLoginTemplate;
