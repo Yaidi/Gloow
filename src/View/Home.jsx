@@ -6,7 +6,10 @@ import ContainerPromotion from '../Components/ContainerPromotion/ContainerPromot
 import CategoriesDisplay from "../Components/CategoriesDisplay/CategoriesDisplay";
 // Css
 
+
+
 const Home = () => {
+
     return (
         <>
             <div className="row">

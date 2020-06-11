@@ -1,18 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext } from "react";
 import ModalStyle from './Modal.module.css';
+import { UserContext } from '../../Routes/UserContext'
 
 const Modal = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const { isModalOpen, setIsModalOpen } = useContext(UserContext);
 
-    const openModal = () => {
-        setIsModalOpen(true);
-    };
 
     const closeModal = () => {
         setIsModalOpen(false);
     };
 
-    return(
+    return (
 
         <section>
             {isModalOpen && (
@@ -20,9 +18,9 @@ const Modal = () => {
                 <div className={ModalStyle.Overlay}>
                     <div className={ModalStyle.Dialog}>
                         <button onClick={closeModal}>
-                            <span 
+                            <span
                                 className={ModalStyle.CrossIcon}>
-                                    &times;
+                                &times;
                             </span>
                         </button>
 

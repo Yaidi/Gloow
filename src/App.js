@@ -4,19 +4,25 @@ import Routes from './Routes/Routes';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 
+import { UserContextProvider } from "./Routes/UserContext";
+import Modal from './Components/Modal/Modal'
 // Css
 import './App.css';
 
 function App() {
     return (
         <>
-            <Header />
-            <div className="container-fluid back py-5">
+            <UserContextProvider>
+                <Header />
                 <div className="container back">
-                    <Routes />
+                    <div className="container-fluid back py-5">
+                        <Routes />
+                    </div>
                 </div>
-            </div>
-            <Footer />
+                <Modal />
+                <Footer />
+            </UserContextProvider>
+
         </>
     );
 }
