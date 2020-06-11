@@ -7,9 +7,9 @@
 + [Brand](#brand)
     - About Our Problematic
     - Startup
-+ [Planing](#planing)
++ [Planning](#planning)
   - GitHub's Flow
-  - Tecnologies
+  - Technologies
 + [Design](#design)
     - Prototype
     - Proposal Design
