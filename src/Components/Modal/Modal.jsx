@@ -4,9 +4,7 @@ import LoginTemplate from './Templates/Login/LoginTemplate';
 import ShoppingTemplate from './Templates/Shopping/ShoppingTemplate';
 
 const Modal = () => {
-    const { isModalOpen, setIsModalOpen } = useContext(UserContext);
-
-    const [loginAdmin, setLoginAdmin] = useState(true);
+    const { isModalOpen, setIsModalOpen, loginAdmin } = useContext(UserContext);
 
     const closeModal = () => {
         setIsModalOpen(false);
@@ -17,9 +15,9 @@ const Modal = () => {
         <section>
             {isModalOpen && (
                 loginAdmin ?
-                    <LoginTemplate closeModal={closeModal}/>
+                    <LoginTemplate closeModal={closeModal} />
                     :
-                    <ShoppingTemplate closeModal={closeModal}/>
+                    <ShoppingTemplate closeModal={closeModal} />
             )}
         </section>
 

@@ -8,19 +8,21 @@ import { UserContext } from '../../Routes/UserContext'
 
 const Header = () => {
 
-    const { setIsModalOpen } = useContext(UserContext);
+    const { setIsModalOpen, user, setLoginAdmin } = useContext(UserContext);
 
     const openModalLogin = () => {
         setIsModalOpen(true)
+        setLoginAdmin(true)
     };
     const openModalCart = () => {
         setIsModalOpen(true)
+        setLoginAdmin(false)
     };
 
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id={HeaderStyle.backColor}>
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="/">
 
                     <img
                         alt="Gloowheader"
@@ -37,8 +39,10 @@ const Header = () => {
                     </ul>
                     <ul className="navbar-nav ml-auto">
                         <span className="navbar-text">
-                            Welcome Admin Shopper
-                    </span>
+                            <p>
+                                Welcome {user}
+                            </p>
+                        </span>
                         <li className="nav-item active">
                             <div className="nav-link">
                                 <img
