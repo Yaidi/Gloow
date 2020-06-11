@@ -2,18 +2,18 @@
 
 ## HACKING CHALLENGE NAGARRO
 
-##  ![form](src/Assets/form.png) Table of Content
+##  ![form](src/Assets/form.png) Table of Contents
 
 + [Brand](#brand)
     - About Our Problematic
     - Startup
-+ [Planing](#planing)
-  - Flow Git Hub
-  - Tecnologies
-+ [Desing](#desing)
++ [Planning](#planning)
+  - GitHub's Flow
+  - Technologies
++ [Design](#design)
     - Prototype
     - Proposal Design
-    - Functional Design Document
+    - Functional Design Document (FDD)
     - Finished Product
 + [Authors](#authors)
 + [Aknowledgments](#aknowledgments)
@@ -26,19 +26,19 @@
 
 ##### The principle of our company is to solve 2 problems
 
- **1.** Why would users want to use a new clothing app if there are thousands on the market for highly established companies?
+ **1.** Why would users want to use a new clothing app, if there are thousands on the market for highly established companies?
 
-**2.** Why do we have to spend so much money on expensive dresses or suits, and wear them only once in a lifetime, And then leave them in our closets.
+**2.** Why do we have to spend so much money on expensive dresses or suits, and wear them only once in a lifetime, and then leave them in our closets?
 
-**3.** Or always use the same boring clothes  because we don't have much capital to buy new ones?
+**3.** Using the same boring clothes because we don't have much capital to buy new ones.
 
 ### Startup
 
 ##### We created Gloow to solve these 2 problems
 
-![Girl with money](src/Assets/girl-fondo.png) **Gloow clothing store** allows you to buy   clothing stores and accesories, but also allows you to return used items that were purchased at Gloow and exchange them for Gloow coins.
+![Girl with money](src/Assets/girl-fondo.png) **Gloow clothing store** allows you to buy clothing stores and accessories, but also allows you to return used items that were purchased at Gloow and exchange them for Gloow coins.
 
-With Gloow coins our users will be able to buy new items, and they will always be able to buy new ones.
+With Gloow coins, our users will be able to buy new items, and they will always be able to buy new ones.
 
 ---
 
@@ -46,48 +46,46 @@ With Gloow coins our users will be able to buy new items, and they will always b
 
 Maybe the idea that people can return items may seem crazy, but our business model is as follows:
 
-![form](src/Assets/bussines-model/shopping-cart.png) 1. Customers will only be able to return the items they are premium users and if the they bought at glow, which ensures a repurchase on our page.
+![form](src/Assets/bussines-model/shopping-cart.png) 1. Customers will only be able to return the items they are premium users and if they bought at Gloow, which ensures a repurchase on our page.
 
-2. Only items that comply with the return policies can be exchanged for gloow points. ![form](src/Assets/bussines-model/money.png)
+2. Only items that comply with the return policies can be exchanged for Gloow points. ![form](src/Assets/bussines-model/money.png)
 
-![form](src/Assets/bussines-model/shopping-down.png) 3. What do we do with the returned items?
+![form](src/Assets/bussines-model/shopping-down.png) 3. Where do the returned items go?
 These will be for sale at Gloow Bazar, where our customers will also be able to use their Gloow points and will be able to purchase quality products at a low price, but with the non-return policy.
 
 ![Line](src/Assets/line.png)
 
-## Planing
+## Planning
 
 ### ![form](src/Assets/form.png) Code Structure Diagram
 
 ![form](src/Assets/planing/diagram.jpeg)
 
-### ![form](src/Assets/form.png)Flow Git Hub
+### ![form](src/Assets/form.png)GitHub's Flow
 
  ![form](src/Assets/planing/flow-git.jfif)
 
-### ![form](src/Assets/form.png)Tecnologies
+### ![form](src/Assets/form.png)Technologies
 
+- ES6
+- HTML5
+- CSS3
 - React
-- Hooks
+- Hooks (useState, useEffect, useContext)
 - React-router-dom
-- Use Context
-- Fetch,
+- Fetch
 - Bootstrap
 - Reactstrap
-- Jest
-- .editorconfig
-- ES6
-- Css
-- Git work flow
-- Github Projects
-- Canva
-- Git
+- Testing-library/react (JEST-dom)
 - Postman
+- .editorconfig
+- Git Workflow
+- Github Issues, Projects & Milestones.
+- Kanvan
 - Figma
 - Photoshop
 - Google Analytics
 - Facebook developers
-- Github
 
 ![Line](src/Assets/line.png)
 
@@ -135,4 +133,4 @@ These will be for sale at Gloow Bazar, where our customers will also be able to 
 ✒️ [@Teresa Carbajal](https://github.com/TeresaC21 'Repository of Teresa Carbajal')
 
 ![Yaidi](src/Assets/team-faces/yaidi.png)
-✒️ [@Yaidi Garcia](https://github.com/Yaidi 'Repository of Yaidi Garcia')
+✒️ [@Yaidi Garcia](https://github.com/Yaidi 'Repository of Yaidi Garcia')s
