@@ -1,20 +1,8 @@
-.container{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
 .counter {
     color:#D283A9;
-    box-shadow: #f93b75 20em;
-    position: absolute;
+    text-shadow: #f93b75 20em;
     top: 6em;
-    left: 5em;
+    left: 3em;
+    border-color: #f93b75 10em;
 }
 
-.center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
