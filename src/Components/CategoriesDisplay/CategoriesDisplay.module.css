@@ -1,7 +1,10 @@
-/*.container {
+.container {
+  position: relative;
+  display: block;
   }
- */ 
   .overlay {
+    display: block;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -14,7 +17,10 @@
 
   .container:hover .overlay {
     opacity: 1;
-    background-color:rgba(0, 0, 0, 0.575);
+    position: absolute;
+    background:rgba(0, 0, 0, 0.575) no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
   }
   .text {
     color: white;
