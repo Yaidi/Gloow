@@ -27,11 +27,19 @@ export default function CategoriesDisplay() {
     }
     return (
         <div>
-            {randomCategories.map((el, index) => (
-                <section key={index}>
-                    <div>{el.description}</div>
-                </section>
-            ))}
+            <div class="card-deck">
+                {randomCategories.map((el, index) => (
+                    <section class="card" key={index}>
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <div>{el.description}</div>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </section>
+                ))}
+
+            </div>
         </div>
     );
 }
