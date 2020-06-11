@@ -10,7 +10,6 @@ const Header = () => {
 
     const { setIsModalOpen } = useContext(UserContext);
 
-
     const openModalLogin = () => {
         setIsModalOpen(true)
     };
@@ -18,11 +17,9 @@ const Header = () => {
         setIsModalOpen(true)
     };
 
-
-
     return (
         <header>
-            <nav className="navbar  navbar-expand-lg navbar-dark" id={HeaderStyle.backColor}>
+            <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id={HeaderStyle.backColor}>
                 <a className="navbar-brand" href="#">
                     <img
                         alt="Gloowheader"

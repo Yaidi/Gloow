@@ -16,8 +16,8 @@ function App() {
         <>
             <UserContextProvider>
                 <Header />
-                <div className="container back">
-                    <div className="container-fluid back py-5">
+                <div className="container-fluid body-content back py-5">
+                    <div className="container back">
                         <Routes />
                     </div>
                 </div>

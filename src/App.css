@@ -1,3 +1,8 @@
+.body-content {
+ min-height: 100vh;
+ margin-top: 2rem;
+}
+
 .back{
     background-color: #1C1A1A;
 }
@@ -5,3 +10,5 @@
     border-color: white;
     color: white;
 }
+
+
