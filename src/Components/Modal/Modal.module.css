@@ -88,7 +88,6 @@ p {
 }
 
 /*mobile media queries */
-
 @media (max-width: 460px) {
     .Dialog {
         top: 40%;
