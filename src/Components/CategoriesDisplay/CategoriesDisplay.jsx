@@ -65,7 +65,7 @@ export default function CategoriesDisplay() {
                         <div className="card-body">
                             <Link to={`/CategoriesList/${el.categoryId}`} className={Style.container}>
                                 <img src={el.picture}  className="card-img-top" alt= {el.description} />
-                                < div className={Style.overlay}>
+                                 <div className={Style.overlay}>
                               <div className={Style.text}>{"Go to " + el.description + " and see the products" }
                               </div>
                               </div>
