@@ -14,8 +14,8 @@ function App() {
     return (
         <>
             <UserContextProvider>
+                 <Header/>
                 <div className="container-fluid body-content back py-5">
-                        <Header/>
                     <div className="container back">
                         <Routes />
                     </div>
