@@ -26,7 +26,7 @@ export function ProductsDisplay() {
                             </div>
                         </div>
                     ))}
-                </div>s
+                </div>
         </div>
         </>
     );

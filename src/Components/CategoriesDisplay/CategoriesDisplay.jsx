@@ -63,34 +63,17 @@ export function CategoriesDisplay() {
                 {randomCategories.map((el, index) => (
                     <section className="card back" key={index}>
                         <div className="card-body">
-                            <Link to={`/CategoriesList/${el.categoryId}`} className={Style.container}>
-                                <img src={el.picture} className="card-img-top" alt={el.description} />
-                                <div className={Style.overlay}>
-                                    <div className={Style.text}>{"Go to " + el.description + " and see the products"}
-                                    </div>
-                                </div>
-                            </Link>
+                            <Link to={`/ProductsbyCategory/${el.categoryId}`} className={Style.container}>
+                                <img src={el.picture}  className="card-img-top" alt= {el.description} />
+                                 <div className={Style.overlay}>
+                              <div className={Style.text}>{"Go to " + el.description + " and see the products" }
+                              </div>
+                              </div>
+                            </Link>  
                         </div>
                     </section>
                 ))}
             </div>
-        </div>
-    );
-}
-export function AllCategoriesDisplay() {
-    const [data, setData] = useState([]);
-    console.log("data: ", data);
-    useEffect(() => {
-        AllCategories().then((response) => setData(response));
-    }, []);
-
-    return (
-        <div>
-            {data.map((el, index) => (
-                <section key={index}>
-                    <div>{el.description}</div>
-                </section>
-            ))}
         </div>
     );
 }
