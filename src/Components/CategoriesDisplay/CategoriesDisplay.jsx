@@ -70,7 +70,6 @@ export function CategoriesDisplay() {
                                     </div>
                                 </div>
                             </Link>
-
                         </div>
                     </section>
                 ))}
