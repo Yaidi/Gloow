@@ -47,6 +47,7 @@ const Header = () => {
                             <div className="nav-link">
                                 <img
                                     alt="AdminIcon"
+                                    id="admin-icon"
                                     onClick={openModalLogin}
                                     src={AdminIcon}
                                     className={HeaderStyle.Icons}
@@ -58,6 +59,7 @@ const Header = () => {
                             <div className="nav-link">
                                 <img
                                     alt="ShoppingIcon"
+                                    id="shopping-icon"
                                     onClick={openModalCart}
                                     src={ShoppingIcon}
                                     className={HeaderStyle.Icons}
