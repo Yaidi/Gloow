@@ -7,15 +7,15 @@ import CategoriesAdmin from '../View/CategoriesAdmin';
 import ProductsList from '../View/ProductsList';
 import ProductsAdmin from '../View/ProductsAdmin';
 import ProductsDescription from '../View/ProductsDescription';
-import ProductsbyCategory from '../View/ProductsbyCategory';
 import Home from '../View/Home';
 import Analytics from '../View/Analytics';
+import Header from '../../src/Components/Header/Header'
 
 
 const Routes = () => {
     return (
         <Router>
-
+            <Header />
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/PromotionsList' component={PromotionsList} />
@@ -28,7 +28,6 @@ const Routes = () => {
                 <Route path='/ProductsDescription/:id' component={ProductsDescription} />
                 <Route exact path='/Analytics' component={Analytics} />
             </Switch>
-
         </Router >
     );
 };
