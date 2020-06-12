@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ProductsId } from "../../Library/UseFetch";
 import { AllProducts } from "../../Library/UseFetch";
-// Css
 import Style from "./ProductsDisplay.module.css";
 
 export function ProductsDetails({ match }) {
@@ -17,8 +16,7 @@ export function ProductsDetails({ match }) {
                     <li>
                         <Link
                             key={data.productId}
-                            to={`/ProductsList/${data.productId}`}
-                        >
+                            to={`/ProductsList/${data.productId}`>
                             <li>{data.description}</li>
                             <li>{data.price}</li>
                         </Link>
