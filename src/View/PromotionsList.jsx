@@ -1,18 +1,17 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { AllPromotions } from "../Library/UseFetch";
+import BackTo from "../Components/LinkBackTo/LinkBackTo";
 
 export default function PromotionsList() {
     const [data, setData] = useState([]);
-    console.log("data: ", data);
     useEffect(() => {
         AllPromotions().then((response) => setData(response));
     }, []);
 
     return (
-        <>
             <div className="container">
+            <BackTo move="/" nameback="HOME"/>
                 <div className="row">
                     {data.map((el, index) => (
                         <div className="col-md-6 col-lg-4 my-3">
@@ -25,6 +24,5 @@ export default function PromotionsList() {
                     ))}
                 </div>
         </div>
-        </>
     );
 }

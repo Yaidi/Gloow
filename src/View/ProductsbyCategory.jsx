@@ -12,6 +12,8 @@ export default function ProductsbyCategories({match}) {
 
    return (
             <>
+            <div className="container">
+                <div className="row">
                      {data.map((el, index) => (
                         <Link
            key={index}
@@ -33,6 +35,8 @@ export default function ProductsbyCategories({match}) {
             </div>
                </Link>
                 ))}
+                </div>
+                </div>
                 </>
         );
     }
