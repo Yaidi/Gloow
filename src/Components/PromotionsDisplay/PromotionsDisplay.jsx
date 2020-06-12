@@ -55,19 +55,11 @@ export default function PromotionsDisplay() {
     }
     return (
         <div>
-            <div className="container">
-                <div className="row">
-                    {randomPromotions.map((el, index) => (
-                        <div className="col-md-6 col-lg-4 my-3">
-                            <section className="card mb-3 back" key={index}>
-                                <Link to={`/PromotionsList/${el.promotionID}`}>
-                                    <img src={el.picture} className="card-img-top width height" alt={el.description} />
-                                </Link>
-                            </section>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            {randomPromotions.map((el, index) => (
+                <section className="card mb-3 back" key={index}>
+                    <img src={el.picture} className="card-img-top width height" alt={el.description} />
+                </section>
+            ))}
         </div>
     );
 }
