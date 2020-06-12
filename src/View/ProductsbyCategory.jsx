@@ -12,27 +12,28 @@ export default function ProductsbyCategories({match}) {
 
    return (
             <>
-                     {data.map((el, index) => (
-                        <Link
-           key={index}
-            to={`/ProductsDetails/${el.productId}`}>
             <div className="container">
                 <div className="row">
+                        {data.map((el, index) => (
                     <div className="col-md-6 col-lg-4 my-3">
                             <div className="card text-center back"></div>
-        <section className={`card-body mb-3 back letter-white `} key={index}>
+        <section className={`card-body mb-3 back letter-white cardheight `} key={index}>
+        <Link
+            key={index}
+            to={`/ProductsDetails/${el.productId}`}>
             <img src={el.picture} className="card-img-top" alt={el.picture}/>
             <div className="card-body">
-                <h5 className="card-title"> {el.description}</h5>
-                    <p className="card-text"> {"$" + el.price} </p>
+                <h5 className="card-title letter-white"> {el.description}</h5>
+                    <p className="card-text letter-white"> {"Price: $ " + el.price} </p>
                     <FontAwesomeIcon icon={faCartPlus} color="white" size="1x" />
             </div>
+            </Link>
         </section>
             </div>
-            </div>
-            </div>
-               </Link>
+             
                 ))}
+                </div>
+                </div>
                 </>
         );
     }

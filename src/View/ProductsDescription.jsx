@@ -1,5 +1,7 @@
 import React from "react";
 import { ProductsDetails } from "../Components/ProductsDisplay/ProductsDisplay";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { ProductsId } from "../Library/UseFetch";
 import BackTo from "../Components/LinkBackTo/LinkBackTo";
@@ -16,23 +18,20 @@ export default function ProductsDescription({ match }) {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-lg-4 my-3">
-                            <div className="card text-center">
                                 <section className="card-body back letter-white" mb-3 >
                                     <Link
                                         key={data.productId}
-                                        to={`/ProductsList/${data.productId}`}
-                                    >
-                                        <p>{data.colors}</p>
-                                        <p>{data.sizes}</p>
-                                        <p>{data.description}</p>
-                                        <p>{data.price}</p>
+                                        to={`/ProductsList/${data.productId}`} >
+                                        <h5 className="card-title letter-white"> {data.description}</h5>
+                                        <p className="letter-white">{"Colors: " + data.colors}</p>
+                                        <p className="letter-white">{"Sizes: " + data.sizes}</p>
+                                        <p className="letter-white">{"Price: $ " + data.price}</p>
+                                        <FontAwesomeIcon icon={faCartPlus} color="white" size="1x" />
                                     </Link>
-                                    <a href="#" className="btn btn-secondary">Go somewhere</a>
                                 </section>
                             </div>
                         </div>
                     </div>
-                </div>
             </>
         );
     }
