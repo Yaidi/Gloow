@@ -2,6 +2,7 @@ import React from "react";
 import {ProductsDetails} from "../Components/ProductsDisplay/ProductsDisplay";
 import { Link } from "react-router-dom";
 import { ProductsId } from "../Library/UseFetch";
+import BackTo from "../Components/LinkBackTo/LinkBackTo";
 
 export default function ProductsDescription({ match }) {
     console.log(match);
@@ -10,17 +11,23 @@ export default function ProductsDescription({ match }) {
     if (data !== undefined) {
         return (
             <div>
+      <BackTo move="/" nameback="HOME"/>
+  
+            <div>
                 <ul>
                     <li>
                         <Link
                             key={data.productId}
                             to={`/ProductsList/${data.productId}`}
                         >
-                            <li>{data.description}</li>
-                            <li>{data.price}</li>
+                            <p>{data.description}</p>
+                            <p>{data.colors}</p>
+                            <p>{data.sizes}</p>
+                            <p>{data.price}</p>
                         </Link>
                     </li>
                 </ul>
+             </div>
             </div>
         );
     }
