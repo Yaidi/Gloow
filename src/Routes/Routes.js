@@ -6,7 +6,8 @@ import CategoriesList from '../View/ProductsbyCategory';
 import CategoriesAdmin from '../View/CategoriesAdmin';
 import ProductsList from '../View/ProductsList';
 import ProductsAdmin from '../View/ProductsAdmin';
-// import ProductsDetails from '../View/ProductsDetails';
+import ProductsDescription from '../View/ProductsDescription';
+import ProductsbyCategory from '../View/ProductsbyCategory';
 import Home from '../View/Home';
 import Analytics from '../View/Analytics';
 
@@ -20,11 +21,11 @@ const Routes = () => {
                 <Route exact path='/PromotionsList' component={PromotionsList} />
                 <Route exact path='/PromotionsAdmin' component={PromotionsAdmin} />
                 <Route path='/CategoriesList/:id' component={CategoriesList} />
-                <Route path='/ProductsbyCategory' component={CategoriesList} />
+                <Route path='/ProductsbyCategory/:id' component={CategoriesList} />
                 <Route exact path='/CategoriesAdmin' component={CategoriesAdmin} />
                 <Route path='/ProductsList' component={ProductsList} />
                 <Route exact path='/ProductsAdmin' component={ProductsAdmin} />
-                {/* <Route exact path='/ProductsDetails' component={ProductsDetails} /> */}
+                <Route path='/ProductsDescription/:id' component={ProductsDescription} />
                 <Route exact path='/Analytics' component={Analytics} />
             </Switch>
 
