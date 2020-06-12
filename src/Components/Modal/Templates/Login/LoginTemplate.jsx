@@ -1,47 +1,60 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import LoginStyle from './LoginTemplate.module.css';
+import { UserContext } from '../../../../Routes/UserContext'
+import { SerchUser } from '../../../../Library/UseFetch'
 
 const AdminLoginTemplate = ({ closeModal }) => {
 
-    // State from value email and password
-    const [user, setSaveUser] = useState({
-        email: "",
-        password: "",
-    });
+
+    // State from value userName and password
+    const { user, setSaveUser, setdatauser, setIsModalOpen } = useContext(UserContext);
+
 
     // State from not empty inputs
-    const [error, setError] = useState({
-        errorFields: false,
-        errorUs: false
-    });
+    const [error, setError] = useState({ errorFields: false, errorUs: false });
 
-    // Take values email and password of input
+    // Take values userName and password of input
     const onChangeInput = (e) => {
         setSaveUser({
             ...user,
             [e.target.name]: e.target.value,
         });
     };
-    const { email, password } = user;
+    const { userName, password } = user;
 
-    // Click user
-    const onSubmit = (e) => {
+    // enter user
+    const onSubmit = async (e) => {
         e.preventDefault();
 
-        // Validate not empty inputs
-        if (email.trim() === "" || password.trim() === "") {
+        // // Validate not empty inputs
+        // regex para userName.
+        if (userName.trim() === "" || password.trim() === "") {
             setError({
                 ...error,
                 errorFields: true
             });
             return;
         }
+        const response = await SerchUser(userName, password);
+        const obj = {};
+        obj.token = response.access_token;
+        obj.userName = 'Admin';
+        response.error == null ? UpdateData() : alert('chech your info')
+
         // Delete mesage error
         setError({
             ...error,
             errorFields: false
         });
+
+        function UpdateData() {
+            setdatauser(obj)
+            setIsModalOpen(false)
+            user.userName = ''
+            user.password = ''
+        }
     };
+
     return (
         <div className={LoginStyle.Overlay}>
             <div className={LoginStyle.lgDialog}>
@@ -61,12 +74,12 @@ const AdminLoginTemplate = ({ closeModal }) => {
                 <form onSubmit={onSubmit}>
                     <div className="modal-body" >
                         <input
-                            name="email"
-                            type="email"
-                            id="email"
-                            value={email}
+                            name="userName"
+                            type="userName"
+                            id="userName"
+                            value={userName}
                             className={LoginStyle.Inputs}
-                            placeholder="Email Adress:"
+                            placeholder="User Name:"
                             onChange={onChangeInput}
                         />
                         <input
@@ -82,7 +95,6 @@ const AdminLoginTemplate = ({ closeModal }) => {
                             <button
                                 type="submit"
                                 name="action"
-                                /*  onClick={() => { console.log(alert(`admin must login.`)) }} */
                                 className={LoginStyle.LoginButton}>
                                 LOGIN
                         </button>
