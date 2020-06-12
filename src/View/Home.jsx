@@ -1,7 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import SearchForm from "../Components/SearchButton/SearchButton";
-import ContainerPromotion from "../Components/ContainerPromotion/ContainerPromotion";
 import { CategoriesDisplay } from "../Components/CategoriesDisplay/CategoriesDisplay";
 import PromotionsDisplay from "../Components/PromotionsDisplay/PromotionsDisplay";
 
@@ -22,7 +21,6 @@ const Home = () => {
 
             <div className="row">
                 <div className="col-lg-12">
-                    <ContainerPromotion />
                     <PromotionsDisplay />
                 </div>
             </div>
