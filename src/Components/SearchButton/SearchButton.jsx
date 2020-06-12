@@ -14,7 +14,7 @@ export default function SearchForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        history.push(`/ProductsList/${input}`);
+        history.push(`/ProductsDescription/${input}`);
     };
 
     return (
