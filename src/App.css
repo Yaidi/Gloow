@@ -49,3 +49,6 @@ img {
     letter-spacing: 0.02em;
     word-spacing: 0.1em;
 }
+.cardheight{
+    min-height: 250px;
+}
