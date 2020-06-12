@@ -1,7 +1,13 @@
-import React from 'react';
+import React from "react";
+import BackTo from "../Components/LinkBackTo/LinkBackTo";
 
 const PromotionsAdmin = () => {
-  return <h1>Hello, I'm PromotionsAdmin</h1>;
+  return (
+    <div>
+    <div>
+      <BackTo move="/PromotionsList" nameback="PROMOTIONS"/>
+    </div>
+    </div>)
 };
 
 export default PromotionsAdmin;
