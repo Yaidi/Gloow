@@ -1,7 +1,11 @@
 import React from 'react';
-
+import BackTo from "../Components/LinkBackTo/LinkBackTo";
 const CategoriesAdmin = () => {
-  return <h1>Hello, I'm CategoriesAdmin</h1>;
+  return (
+    <div>
+       <BackTo move="/" nameback="HOME"/>
+    </div>
+  )
 };
 
 export default CategoriesAdmin;
