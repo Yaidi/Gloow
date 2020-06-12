@@ -5,10 +5,14 @@ import Gloowheader from '../../Assets/icons/gloowheader.png';
 import HeaderStyle from './Header.module.css'
 import ButtonShopping from "../CarshoppingButton/CarshoppingButton";
 import { UserContext } from '../../Routes/UserContext'
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
 
     const { setIsModalOpen, setLoginAdmin, dataUser } = useContext(UserContext);
+
+
 
     const openModalLogin = () => {
         setIsModalOpen(true)
@@ -22,14 +26,14 @@ const Header = () => {
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id={HeaderStyle.backColor}>
-                <a className="navbar-brand" href="/">
+                <Link to="/" className="navbar-brand"  >
 
                     <img
                         alt="Gloowheader"
                         src={Gloowheader}
                         className={HeaderStyle.Logo}
                     />
-                </a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
