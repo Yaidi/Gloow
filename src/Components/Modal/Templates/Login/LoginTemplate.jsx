@@ -7,7 +7,7 @@ const AdminLoginTemplate = ({ closeModal }) => {
 
 
     // State from value userName and password
-    const { user, setSaveUser } = useContext(UserContext);
+    const { user, setSaveUser, setdatauser, setIsModalOpen } = useContext(UserContext);
 
 
     // State from not empty inputs
@@ -29,26 +29,32 @@ const AdminLoginTemplate = ({ closeModal }) => {
         // // Validate not empty inputs
         // regex para userName.
         if (userName.trim() === "" || password.trim() === "") {
-
             setError({
                 ...error,
                 errorFields: true
             });
             return;
         }
-
         const response = await SerchUser(userName, password);
-        if (response.error)
+        const obj = {};
+        obj.token = response.access_token;
+        obj.userName = 'Admin';
+        response.error == null ? UpdateData() : alert('chech your info')
 
+        // Delete mesage error
+        setError({
+            ...error,
+            errorFields: false
+        });
 
-
-
-            // Delete mesage error
-            setError({
-                ...error,
-                errorFields: false
-            });
+        function UpdateData() {
+            setdatauser(obj)
+            setIsModalOpen(false)
+            user.userName = ''
+            user.password = ''
+        }
     };
+
     return (
         <div className={LoginStyle.Overlay}>
             <div className={LoginStyle.lgDialog}>

@@ -8,7 +8,7 @@ import { UserContext } from '../../Routes/UserContext'
 
 const Header = () => {
 
-    const { setIsModalOpen, user, setLoginAdmin } = useContext(UserContext);
+    const { setIsModalOpen, setLoginAdmin, dataUser } = useContext(UserContext);
 
     const openModalLogin = () => {
         setIsModalOpen(true)
@@ -40,7 +40,7 @@ const Header = () => {
                     <ul className="navbar-nav ml-auto">
                         <span className="navbar-text">
                             <p>
-                                Welcome {user.name}
+                                Welcome {dataUser.userName}
                             </p>
                         </span>
                         <li className="nav-item active">

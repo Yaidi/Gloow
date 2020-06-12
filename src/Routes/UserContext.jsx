@@ -8,7 +8,8 @@ export const UserContext = createContext();
 //box that save values to share width other components 
 
 export const UserContextProvider = ({ children }) => {
-    const [user, setSaveUser] = useState({ userName: "", password: "", name: "" });
+    const [user, setSaveUser] = useState({ userName: "", password: "", });
+    const [dataUser, setdatauser] = useState({});
     const [shoppingCounter, setShoppingCounter] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [loginAdmin, setLoginAdmin] = useState(true);
@@ -16,7 +17,19 @@ export const UserContextProvider = ({ children }) => {
 
 
     return (
-        <UserContext.Provider value={{ user, setSaveUser, shoppingCounter, setShoppingCounter, Modal, isModalOpen, setIsModalOpen, loginAdmin, setLoginAdmin }}>
+        <UserContext.Provider value={
+            {
+                user,
+                setSaveUser,
+                shoppingCounter,
+                setShoppingCounter,
+                Modal, isModalOpen,
+                setIsModalOpen,
+                loginAdmin,
+                setLoginAdmin,
+                dataUser,
+                setdatauser
+            }}>
             {children}
         </UserContext.Provider>
     );
