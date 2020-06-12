@@ -7,6 +7,7 @@ import shoes from "../../Assets/promotionsImages/shoes.png";
 import dresses from "../../Assets/promotionsImages/dresses.png";
 import handbags from "../../Assets/promotionsImages/handbags.png";
 import home from "../../Assets/promotionsImages/home.png";
+import Style from "./PromotionDisplay.module.css";
 
 export default function PromotionsDisplay() {
     const [data, setData] = useState([]);
@@ -54,25 +55,13 @@ export default function PromotionsDisplay() {
     }
     return (
         <div>
-            <div className="card-deck">
-                {randomPromotions.map((el, index) => (
-                    <section className="card back white" key={index}>
-                        <img src="..." className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <Link to={`/PromotionsList/${el.promotionID}`}>
-                                <img src={el.picture} alt="" />
-                                {el.description}
-                            </Link>
-                            <p className="card-text">
-                                <small className="text-muted">
-                                    Last updated 3 mins ago
-                                </small>
-                            </p>
-                        </div>
-                    </section>
-                ))}
-            </div>
+            {randomPromotions.map((el, index) => (
+                <section className="card mb-3 back" key={index}>
+                    <Link to={`/PromotionsList/${el.promotionID}`}>
+                        <img src={el.picture} className="card-img-top width height" alt={el.description} />
+                    </Link>
+                </section>
+            ))}
         </div>
     );
 }

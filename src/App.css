@@ -10,10 +10,16 @@
     border-color: white;
     color: white;
 }
+.width{
+    max-width: 100vw;
+}
+.height {
+    max-height: 30vh;
+}
 
 /* this modifies categories cards size */
 img {
-    max-width: 20vw;
+    max-width: 25vw;
 }
 
 .letter-white{
@@ -35,6 +41,11 @@ img {
 }
 .see-promotion{
     font-size: x-large;
+    letter-spacing: 0.02em;
+    word-spacing: 0.1em;
+}
+.back-promotion{
+    font-size: xx-large;
     letter-spacing: 0.02em;
     word-spacing: 0.1em;
 }
