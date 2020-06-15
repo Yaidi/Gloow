@@ -1,0 +1,25 @@
+/* css */
+.Logo {
+    max-width: 9vw;
+}
+
+.Icons {
+   max-width: 3vw;
+   cursor: pointer;
+}
+#backColor{
+    background-color: black;
+}
+
+.follow{
+    position: fixed;
+}
+@media only screen and (max-width: 600px) {
+    .Logo {
+        max-width: 18vw !important;
+    }
+    
+    .Icons {
+       max-width: 6vw !important;
+    }
+  }

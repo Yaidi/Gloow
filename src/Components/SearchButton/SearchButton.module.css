@@ -1,0 +1,32 @@
+.input{
+    border: none;
+    border-bottom-style: solid;
+    border-color: white;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+    letter-spacing: 0.02em;
+    color: #FFB9FF;
+    position: relative;
+}
+
+::placeholder { color: #FFB9FF; }
+
+input:focus {
+    border: transparent;
+    background-color: transparent;
+    color: #CF2488;
+    }
+
+input:active {
+        background-color:#F0F8FF;
+        color: #CF2488;
+    }
+.button {
+    border: none;
+    background-color: transparent;
+
+}
+form {
+    margin-bottom: 2em;
+}

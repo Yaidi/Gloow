@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import Routes from './Routes/Routes';
+import Footer from './Components/Footer/Footer';
+import { UserContextProvider } from "./Routes/UserContext";
+import Modal from './Components/Modal/Modal'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <UserContextProvider>
+                <div className="container-fluid body-content back py-5">
+                    <div className="container back">
+                        <Routes />
+                    </div>
+                </div>
+                <Modal />
+                <Footer />
+            </UserContextProvider>
+        </>
+    );
 }
 
 export default App;
